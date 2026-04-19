@@ -1,0 +1,1633 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Kenangan Senja</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">Kenangan <span>Senja</span></a>
+
+      <div class="navbar-nav" id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Pesanan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="shopping-cart-btn" aria-label="Shopping Cart">
+          <i data-feather="shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+        <a href="#" id="hamburger-menu" aria-label="Menu">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <div class="overlay"></div>
+      <main class="content">
+        <h1>Nikmati Hangatnya <span>Kopi Senja</span></h1>
+        <p>
+          Temukan cita rasa kopi terbaik dengan suasana hangat, nyaman, dan
+          penuh kenangan. Cocok untuk menemani pagi, sore, hingga malam harimu.
+        </p>
+        <a href="#menu" class="cta">Pesan Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <h2>Tentang <span>Kami</span></h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80"
+            alt="Tentang Kami"
+          />
+        </div>
+
+        <div class="content">
+          <h3>Ruang hangat untuk kopi, cerita, dan suasana yang nyaman</h3>
+          <p>
+            Kenangan Senja menghadirkan kopi dan minuman favorit dengan rasa
+            yang hangat, bahan pilihan, dan suasana yang nyaman untuk menemani
+            setiap momen pelanggan.
+          </p>
+          <p>
+            Kami percaya bahwa secangkir minuman yang baik bukan hanya soal
+            rasa, tetapi juga tentang pengalaman duduk santai, berbincang,
+            bekerja, ataupun menikmati waktu sendiri.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">
+              ☕ Biji kopi pilihan dan rasa yang konsisten
+            </div>
+            <div class="about-point">
+              🏡 Tempat nyaman untuk santai, kerja, dan ngobrol
+            </div>
+            <div class="about-point">
+              ✨ Menu variatif dari coffee, tea, hingga toast
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section class="menu" id="menu">
+      <h2>Menu <span>Favorit</span></h2>
+      <p>
+        Pilih kategori minuman dan makanan favoritmu, lalu tambahkan langsung ke
+        pesanan.
+      </p>
+
+      <!-- CATEGORY PILLS -->
+      <div class="menu-tabs">
+        <button class="menu-tab" data-category="all">Menu</button>
+        <button class="menu-tab active" data-category="holiday">
+          Holiday Series
+        </button>
+        <button class="menu-tab" data-category="combo">Combo Hemat</button>
+        <button class="menu-tab" data-category="coffee">Coffee</button>
+        <button class="menu-tab" data-category="noncoffee">Non-Coffee</button>
+        <button class="menu-tab" data-category="tea">Tea-Based</button>
+        <button class="menu-tab" data-category="toast">Toast</button>
+      </div>
+
+      <!-- MENU ALL -->
+      <div class="menu-group" data-category="all">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+              alt="Butter Americano"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Butter Americano</h3>
+            <p class="menu-card-desc">
+              Americano dingin dengan sentuhan buttery yang lembut dan foam
+              creamy di atasnya.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Butter Americano"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+              alt="Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Latte</h3>
+            <p class="menu-card-desc">
+              Perpaduan espresso dan susu segar dengan rasa lembut dan creamy.
+            </p>
+            <p class="menu-card-price">Rp 23.000</p>
+            <button
+              class="order-btn"
+              data-name="Latte"
+              data-price="23000"
+              data-image="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=800&q=80"
+              alt="Classic Chocolate"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Classic Chocolate</h3>
+            <p class="menu-card-desc">
+              Minuman cokelat creamy yang manis dan nyaman dinikmati kapan saja.
+            </p>
+            <p class="menu-card-price">Rp 25.000</p>
+            <button
+              class="order-btn"
+              data-name="Classic Chocolate"
+              data-price="25000"
+              data-image="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80"
+              alt="Thai Milk Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Thai Milk Tea</h3>
+            <p class="menu-card-desc">
+              Teh susu khas Thailand dengan rasa manis, creamy, dan segar.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Thai Milk Tea"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOLIDAY SERIES START-->
+      <div class="menu-group active" data-category="holiday">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+              alt="Butter Americano"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Butter Americano</h3>
+            <p class="menu-card-desc">
+              Americano dingin dengan sentuhan buttery yang lembut dan foam
+              creamy di atasnya.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Butter Americano"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+              alt="Mont Blanc"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Mont Blanc</h3>
+            <p class="menu-card-desc">
+              Americano lembut dengan foam manis dan aroma hangat yang nyaman.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Mont Blanc"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+              alt="Mango Americano"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Mango Americano</h3>
+            <p class="menu-card-desc">
+              Americano segar dengan rasa mangga yang ringan dan unik.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Mango Americano"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=800&q=80"
+              alt="Berry Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Berry Latte</h3>
+            <p class="menu-card-desc">
+              Latte lembut dengan sentuhan berry manis dan rasa creamy yang
+              unik.
+            </p>
+            <p class="menu-card-price">Rp 29.000</p>
+            <button
+              class="order-btn"
+              data-name="Berry Latte"
+              data-price="29000"
+              data-image="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+              alt="Hampers 1 Liter"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Hampers: 1 Liter</h3>
+            <p class="menu-card-desc">
+              1 liter minuman favoritmu, cocok untuk dinikmati bersama.
+            </p>
+            <p class="menu-card-price">Rp 65.000</p>
+            <button
+              class="order-btn"
+              data-name="Hampers: 1 Liter"
+              data-price="65000"
+              data-image="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+              alt="Hampers 2 Liter"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Hampers: 2 Liter</h3>
+            <p class="menu-card-desc">
+              2 botol 1 liter minuman favoritmu untuk dinikmati ramai-ramai.
+            </p>
+            <p class="menu-card-price">Rp 120.000</p>
+            <button
+              class="order-btn"
+              data-name="Hampers: 2 Liter"
+              data-price="120000"
+              data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+              alt="Signature Kopi Susu"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Signature Kopi Susu</h3>
+            <p class="menu-card-desc">
+              Espresso premium dengan susu segar dan gula aren yang khas.
+            </p>
+            <p class="menu-card-price">Rp 24.000</p>
+            <button
+              class="order-btn"
+              data-name="Signature Kopi Susu"
+              data-price="24000"
+              data-image="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Caramel Macchiato"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Caramel Macchiato</h3>
+            <p class="menu-card-desc">
+              Perpaduan espresso, susu segar, dan karamel dengan rasa manis yang
+              seimbang.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Caramel Macchiato"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+              alt="Earl Grey Milk Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Earl Grey Milk Tea</h3>
+            <p class="menu-card-desc">
+              Teh Earl Grey creamy dengan susu segar dan sentuhan brown sugar.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Earl Grey Milk Tea"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Spicy Bulgogi"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Spicy Bulgogi</h3>
+            <p class="menu-card-desc">
+              Toast isi beef, coleslaw, omelette, cheese, dan saus bulgogi
+              pedas.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Spicy Bulgogi"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- HOLIDAY SERIES END-->
+
+      <!-- COMBO HEMAT Start-->
+      <div class="menu-group" data-category="combo">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80"
+              alt="Combo Toast + Minuman"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Combo Toast + Minuman</h3>
+            <p class="menu-card-desc">
+              Paket hemat 1 toast dan 1 minuman favorit untuk teman santai.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Combo Toast + Minuman"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80"
+              alt="Combo Berdua"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Combo Berdua</h3>
+            <p class="menu-card-desc">
+              Paket 2 minuman dan 2 toast, cocok untuk sharing bersama teman.
+            </p>
+            <p class="menu-card-price">Rp 74.000</p>
+            <button
+              class="order-btn"
+              data-name="Combo Berdua"
+              data-price="74000"
+              data-image="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+              alt="Combo Coffee Break"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Combo Coffee Break</h3>
+            <p class="menu-card-desc">
+              Paket 1 coffee favorit dan 1 toast ringan untuk teman istirahat.
+            </p>
+            <p class="menu-card-price">Rp 45.000</p>
+            <button
+              class="order-btn"
+              data-name="Combo Coffee Break"
+              data-price="45000"
+              data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80"
+              alt="2 SanGo"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">2 SanGo</h3>
+            <p class="menu-card-desc">
+              Paket 2 SanGo favoritmu dengan harga hemat untuk teman ngemil.
+            </p>
+            <p class="menu-card-price">Rp 36.000</p>
+            <button
+              class="order-btn"
+              data-name="2 SanGo"
+              data-price="36000"
+              data-image="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80"
+              alt="SanGo Box"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">SanGo Box</h3>
+            <p class="menu-card-desc">
+              Pilih 4 varian SanGo favoritmu dalam satu box.
+            </p>
+            <p class="menu-card-price">Rp 72.000</p>
+            <button
+              class="order-btn"
+              data-name="SanGo Box"
+              data-price="72000"
+              data-image="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+              alt="Tiga Toast Lebih Hemat"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Tiga Toast Lebih Hemat</h3>
+            <p class="menu-card-desc">
+              Pilih 3 toast favoritmu dengan harga lebih hemat.
+            </p>
+            <p class="menu-card-price">Rp 57.000</p>
+            <button
+              class="order-btn"
+              data-name="Tiga Toast Lebih Hemat"
+              data-price="57000"
+              data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+              alt="Jajan Berlima mulai dari 90k"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Jajan Berlima mulai dari 90k</h3>
+            <p class="menu-card-desc">
+              Paket 5 minuman favorit untuk dinikmati bersama.
+            </p>
+            <p class="menu-card-price">Rp 90.000</p>
+            <button
+              class="order-btn"
+              data-name="Jajan Berlima mulai dari 90k"
+              data-price="90000"
+              data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- COMBO HEMAT End-->
+
+      <!-- COFFEE Start -->
+      <div class="menu-group" data-category="coffee">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+              alt="Americano"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Americano</h3>
+            <p class="menu-card-desc">
+              Espresso dan air panas dengan rasa kopi yang ringan namun tetap
+              tegas.
+            </p>
+            <p class="menu-card-price">Rp 20.000</p>
+            <button
+              class="order-btn"
+              data-name="Americano"
+              data-price="20000"
+              data-image="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+              alt="Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Latte</h3>
+            <p class="menu-card-desc">
+              Perpaduan espresso dan susu segar dengan rasa lembut dan creamy.
+            </p>
+            <p class="menu-card-price">Rp 23.000</p>
+            <button
+              class="order-btn"
+              data-name="Latte"
+              data-price="23000"
+              data-image="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+              alt="Cappuccino"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Cappuccino</h3>
+            <p class="menu-card-desc">
+              Kopi susu dengan foam lembut yang seimbang antara pahit dan
+              creamy.
+            </p>
+            <p class="menu-card-price">Rp 23.000</p>
+            <button
+              class="order-btn"
+              data-name="Cappuccino"
+              data-price="23000"
+              data-image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+              alt="Caramel Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Caramel Latte</h3>
+            <p class="menu-card-desc">
+              Latte lembut dengan sentuhan karamel yang manis dan nyaman.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Caramel Latte"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80"
+              alt="Vanilla Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Vanilla Latte</h3>
+            <p class="menu-card-desc">
+              Latte lembut dengan aroma vanilla manis yang ringan dan nyaman.
+            </p>
+            <p class="menu-card-price">Rp 29.000</p>
+            <button
+              class="order-btn"
+              data-name="Vanilla Latte"
+              data-price="29000"
+              data-image="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Mocha"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Mocha</h3>
+            <p class="menu-card-desc">
+              Perpaduan kopi, susu, dan cokelat dengan rasa manis yang lebih
+              kaya.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Mocha"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+              alt="Pear Shaken Americano"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Pear Shaken Americano</h3>
+            <p class="menu-card-desc">
+              Americano premium dengan rasa pear yang segar.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Pear Shaken Americano"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+              alt="Signature Kopi Susu"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Signature Kopi Susu</h3>
+            <p class="menu-card-desc">
+              Espresso premium dengan susu segar dan gula aren yang khas.
+            </p>
+            <p class="menu-card-price">Rp 24.000</p>
+            <button
+              class="order-btn"
+              data-name="Signature Kopi Susu"
+              data-price="24000"
+              data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+              alt="Hazelnut Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Hazelnut Latte</h3>
+            <p class="menu-card-desc">
+              Latte lembut dengan rasa hazelnut yang hangat.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Hazelnut Latte"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Caramel Macchiato"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Caramel Macchiato</h3>
+            <p class="menu-card-desc">
+              Espresso, susu segar, karamel, dan cream macchiato yang seimbang.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Caramel Macchiato"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Milo Mocha Macchiato"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Milo Mocha Macchiato</h3>
+            <p class="menu-card-desc">
+              Espresso premium dengan susu segar dan sentuhan malt-cokelat Milo.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Milo Mocha Macchiato"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+              alt="Iced Double Shaken Espresso"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Iced Double Shaken Espresso</h3>
+            <p class="menu-card-desc">
+              Double shot espresso dingin yang dikocok dengan susu segar.
+            </p>
+            <p class="menu-card-price">Rp 29.000</p>
+            <button
+              class="order-btn"
+              data-name="Iced Double Shaken Espresso"
+              data-price="29000"
+              data-image="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- COFFEE End -->
+
+      <!-- NON-COFFEE Start-->
+      <div class="menu-group" data-category="noncoffee">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=800&q=80"
+              alt="Classic Chocolate"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Classic Chocolate</h3>
+            <p class="menu-card-desc">
+              Minuman cokelat creamy yang manis dan nyaman dinikmati kapan saja.
+            </p>
+            <p class="menu-card-price">Rp 25.000</p>
+            <button
+              class="order-btn"
+              data-name="Classic Chocolate"
+              data-price="25000"
+              data-image="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=80"
+              alt="Matcha Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Matcha Latte</h3>
+            <p class="menu-card-desc">
+              Perpaduan matcha dan susu segar dengan rasa lembut dan
+              menenangkan.
+            </p>
+            <p class="menu-card-price">Rp 33.000</p>
+            <button
+              class="order-btn"
+              data-name="Matcha Latte"
+              data-price="33000"
+              data-image="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80"
+              alt="Hazelnut Choco"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Hazelnut Choco</h3>
+            <p class="menu-card-desc">
+              Cokelat lembut dengan rasa hazelnut hangat, manis, dan nyaman.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Hazelnut Choco"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800&q=80"
+              alt="Red Velvet"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Red Velvet</h3>
+            <p class="menu-card-desc">
+              Minuman creamy dengan rasa red velvet yang lembut dan manis.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Red Velvet"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80"
+              alt="Taro Latte"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Taro Latte</h3>
+            <p class="menu-card-desc">
+              Minuman taro creamy dengan rasa lembut dan warna menarik.
+            </p>
+            <p class="menu-card-price">Rp 31.000</p>
+            <button
+              class="order-btn"
+              data-name="Taro Latte"
+              data-price="31000"
+              data-image="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=800&q=80"
+              alt="Milo Macchiato"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Milo Macchiato</h3>
+            <p class="menu-card-desc">
+              Milo klasik dengan lapisan macchiato yang lembut di atasnya.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Milo Macchiato"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=800&q=80"
+              alt="Royale Milo"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Royale Milo</h3>
+            <p class="menu-card-desc">
+              Milo creamy dengan taburan Milo ekstra di atasnya.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Royale Milo"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- NON-COFFEE END-->
+
+      <!-- TEA-BASED START-->
+      <div class="menu-group" data-category="tea">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80"
+              alt="Thai Milk Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Thai Milk Tea</h3>
+            <p class="menu-card-desc">
+              Teh susu khas Thailand dengan rasa manis, creamy, dan segar.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Thai Milk Tea"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80"
+              alt="Lemon Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Lemon Tea</h3>
+            <p class="menu-card-desc">
+              Teh segar dengan rasa lemon ringan, cocok untuk cuaca panas.
+            </p>
+            <p class="menu-card-price">Rp 26.000</p>
+            <button
+              class="order-btn"
+              data-name="Lemon Tea"
+              data-price="26000"
+              data-image="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+              alt="Earl Grey Milk Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Earl Grey Milk Tea</h3>
+            <p class="menu-card-desc">
+              Teh Earl Grey creamy dengan susu segar dan rasa yang lembut.
+            </p>
+            <p class="menu-card-price">Rp 28.000</p>
+            <button
+              class="order-btn"
+              data-name="Earl Grey Milk Tea"
+              data-price="28000"
+              data-image="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+              alt="Peach Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Peach Tea</h3>
+            <p class="menu-card-desc">
+              Teh segar dengan rasa peach manis dan aroma buah yang ringan.
+            </p>
+            <p class="menu-card-price">Rp 27.000</p>
+            <button
+              class="order-btn"
+              data-name="Peach Tea"
+              data-price="27000"
+              data-image="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+              alt="Earl Grey Tea"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Earl Grey Tea</h3>
+            <p class="menu-card-desc">
+              Teh Earl Grey klasik dengan rasa black tea yang ringan.
+            </p>
+            <p class="menu-card-price">Rp 20.000</p>
+            <button
+              class="order-btn"
+              data-name="Earl Grey Tea"
+              data-price="20000"
+              data-image="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80"
+              alt="Lemon Tea with Coco Jelly"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Lemon Tea with Coco Jelly</h3>
+            <p class="menu-card-desc">
+              Lemon tea segar dengan tambahan coco jelly.
+            </p>
+            <p class="menu-card-price">Rp 26.000</p>
+            <button
+              class="order-btn"
+              data-name="Lemon Tea with Coco Jelly"
+              data-price="26000"
+              data-image="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+              alt="Peach Tea with Coco Jelly"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Peach Tea with Coco Jelly</h3>
+            <p class="menu-card-desc">
+              Peach tea segar dengan coco jelly yang manis dan ringan.
+            </p>
+            <p class="menu-card-price">Rp 26.000</p>
+            <button
+              class="order-btn"
+              data-name="Peach Tea with Coco Jelly"
+              data-price="26000"
+              data-image="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+              alt="Lychee Tea with Coco Jelly"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Lychee Tea with Coco Jelly</h3>
+            <p class="menu-card-desc">
+              Lychee tea yang ringan dan menyegarkan dengan tambahan coco jelly.
+            </p>
+            <p class="menu-card-price">Rp 26.000</p>
+            <button
+              class="order-btn"
+              data-name="Lychee Tea with Coco Jelly"
+              data-price="26000"
+              data-image="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- TEA-BASED END-->
+
+      <!-- TOAST START-->
+      <div class="menu-group" data-category="toast">
+        <div class="row">
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Smoked Beef n Cheese"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Smoked Beef n Cheese</h3>
+            <p class="menu-card-desc">
+              Toast isi smoked beef dan keju, cocok jadi teman kopi favoritmu.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Smoked Beef n Cheese"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=800&q=80"
+              alt="Egg n Cheese"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Egg n Cheese</h3>
+            <p class="menu-card-desc">
+              Toast lembut berisi telur dan keju dengan rasa gurih yang
+              sederhana.
+            </p>
+            <p class="menu-card-price">Rp 30.000</p>
+            <button
+              class="order-btn"
+              data-name="Egg n Cheese"
+              data-price="30000"
+              data-image="https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Crunchy Choco"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Crunchy Choco</h3>
+            <p class="menu-card-desc">
+              Toast manis dengan cokelat renyah, cocok untuk teman minum
+              non-coffee.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Crunchy Choco"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
+              alt="Cheese Toast"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Cheese Toast</h3>
+            <p class="menu-card-desc">
+              Toast gurih dengan isian keju lumer yang ringan dan cocok untuk
+              semua minuman.
+            </p>
+            <p class="menu-card-price">Rp 29.000</p>
+            <button
+              class="order-btn"
+              data-name="Cheese Toast"
+              data-price="29000"
+              data-image="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+              alt="Kaya Butter Toast"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Kaya Butter Toast</h3>
+            <p class="menu-card-desc">
+              Toast manis dengan kaya dan butter yang lembut, cocok untuk
+              camilan santai.
+            </p>
+            <p class="menu-card-price">Rp 32.000</p>
+            <button
+              class="order-btn"
+              data-name="Kaya Butter Toast"
+              data-price="32000"
+              data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Spicy Bulgogi"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Spicy Bulgogi</h3>
+            <p class="menu-card-desc">
+              Toast isi beef, coleslaw, omelette, cheese, dan saus bulgogi
+              pedas.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Spicy Bulgogi"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Beef Truffle Mayo"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Beef Truffle Mayo</h3>
+            <p class="menu-card-desc">
+              Toast beef dengan omelette, cheese, garlic flakes, dan truffle
+              mayo.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Beef Truffle Mayo"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Ultimate Cheesy Beef"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Ultimate Cheesy Beef</h3>
+            <p class="menu-card-desc">
+              Toast beef dengan coleslaw, omelette, cheese, dan cheese sauce di
+              atasnya.
+            </p>
+            <p class="menu-card-price">Rp 37.000</p>
+            <button
+              class="order-btn"
+              data-name="Ultimate Cheesy Beef"
+              data-price="37000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+              alt="Plain Toast"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Plain Toast</h3>
+            <p class="menu-card-desc">
+              Toast ala Janji Jiwa dengan lapisan butter yang lembut.
+            </p>
+            <p class="menu-card-price">Rp 19.000</p>
+            <button
+              class="order-btn"
+              data-name="Plain Toast"
+              data-price="19000"
+              data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
+              alt="Crispy Chicken Mentai"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Crispy Chicken Mentai</h3>
+            <p class="menu-card-desc">
+              Toast isi crispy chicken, coleslaw, cheese, dan mentai sauce.
+            </p>
+            <p class="menu-card-price">Rp 36.000</p>
+            <button
+              class="order-btn"
+              data-name="Crispy Chicken Mentai"
+              data-price="36000"
+              data-image="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
+              alt="Crispy Spicy Chicken"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Crispy Spicy Chicken</h3>
+            <p class="menu-card-desc">
+              Toast isi crispy spicy chicken fillet dengan saus khas.
+            </p>
+            <p class="menu-card-price">Rp 36.000</p>
+            <button
+              class="order-btn"
+              data-name="Crispy Spicy Chicken"
+              data-price="36000"
+              data-image="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
+              alt="Cheezy Crispy Chicken Mentai"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Cheezy Crispy Chicken Mentai</h3>
+            <p class="menu-card-desc">
+              Toast crispy chicken dengan mentai sauce dan cheese sauce.
+            </p>
+            <p class="menu-card-price">Rp 36.000</p>
+            <button
+              class="order-btn"
+              data-name="Cheezy Crispy Chicken Mentai"
+              data-price="36000"
+              data-image="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+              alt="Black Pepper Beef - Lite Toast"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Black Pepper Beef - Lite Toast</h3>
+            <p class="menu-card-desc">
+              Lite toast beef dengan scrambled eggs, onion, dan black pepper
+              sauce.
+            </p>
+            <p class="menu-card-price">Rp 25.000</p>
+            <button
+              class="order-btn"
+              data-name="Black Pepper Beef - Lite Toast"
+              data-price="25000"
+              data-image="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=800&q=80"
+              alt="Beef Teriyaki - Lite Toast"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Beef Teriyaki - Lite Toast</h3>
+            <p class="menu-card-desc">
+              Lite toast dengan beef patty, scrambled eggs, onion, dan teriyaki
+              sauce.
+            </p>
+            <p class="menu-card-price">Rp 25.000</p>
+            <button
+              class="order-btn"
+              data-name="Beef Teriyaki - Lite Toast"
+              data-price="25000"
+              data-image="https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
+              alt="Creamy Egg Truffle"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">Creamy Egg Truffle</h3>
+            <p class="menu-card-desc">
+              Toast dengan scrambled eggs, champignon, truffle sauce, dan cheese
+              sauce.
+            </p>
+            <p class="menu-card-price">Rp 36.000</p>
+            <button
+              class="order-btn"
+              data-name="Creamy Egg Truffle"
+              data-price="36000"
+              data-image="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80"
+            >
+              Tambah ke Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MENU SECTION END -->
+
+    <!-- Hidden elements to keep JS references valid -->
+    <span id="order-list" style="display: none"></span>
+    <span id="total-price" style="display: none"></span>
+    <span id="checkout-btn" style="display: none"></span>
+    <span id="table-number" style="display: none"></span>
+    <span id="success-message" style="display: none"></span>
+
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+      <h2>Kontak <span>Kami</span></h2>
+      <p>
+        Hubungi kami atau datang langsung ke kedai untuk menikmati suasana
+        terbaik.
+      </p>
+
+      <div class="row">
+        <div class="contact-info">
+          <h3>Kenangan Senja Coffee</h3>
+          <p>Jl. Kopi Indah No. 17, Kota Kamu</p>
+          <p>Email: kenangansenja@mail.com</p>
+          <p>Telepon: 0812-3456-7890</p>
+        </div>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="message-square"></i>
+            <input type="text" placeholder="Pesan" />
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Pesanan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Dibuat untuk belajar web dasar | Kenangan Senja</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Checkout Overlay -->
+    <div class="checkout-overlay" id="checkout-overlay"></div>
+
+    <!-- Checkout Drawer (slide dari kanan) -->
+    <aside class="checkout-drawer" id="checkout-drawer">
+      <div class="drawer-header">
+        <h3>Detail Pesanan</h3>
+        <button id="close-checkout-drawer">✕</button>
+      </div>
+      <div class="drawer-body">
+        <div id="drawer-order-list"></div>
+        <div class="drawer-input-group">
+          <label>Nomor Meja</label>
+          <input
+            type="text"
+            id="drawer-table-number"
+            placeholder="Contoh: A1 atau Meja 5"
+          />
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <div class="total-row">
+          <span>Total Bayar:</span>
+          <strong id="drawer-total-price">Rp 0</strong>
+        </div>
+        <button id="drawer-checkout-btn" class="pay-button">
+          Bayar Sekarang
+        </button>
+        <p
+          id="drawer-success-message"
+          style="
+            margin-top: 0.75rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--success);
+          "
+        ></p>
+      </div>
+    </aside>
+
+    <!-- Elemen tersembunyi agar tidak ada referensi null di JS lama -->
+    <div id="floating-cart" style="display: none">
+      <span id="floating-cart-count"></span>
+      <strong id="floating-cart-total"></strong>
+      <button id="open-checkout-drawer" style="display: none"></button>
+    </div>
+
+    <!-- Midtrans Snap -->
+    <script
+      type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-XXXXXXXXXXXXXXXX"
+    ></script>
+
+    <!-- JavaScript -->
+    <script src="script2.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
